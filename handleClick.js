@@ -18,7 +18,3 @@ let clickableDiv = document.getElementById('clickit');
 clickableDiv.addEventListener('click', () => {
     alert('This A a laptop with code');
 })
-
-function handleClick () {
-    alert('This A a laptop with code');
-}
