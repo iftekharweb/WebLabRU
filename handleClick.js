@@ -13,7 +13,7 @@
 //     clickableDiv.insertAdjacentElement('afterend', descriptionDiv);
 // });
 
-let clickableDiv = document.getElementById('clickit');
+var clickableDiv = document.getElementById('clickit');
 
 clickableDiv.addEventListener('click', () => {
     alert('This A a laptop with code');
