@@ -1,0 +1,1 @@
+{"name":"Local: cipher","url":"c:\\Users\\Shishir\\Desktop\\lab\\Cryptography\\cipher.cpp","tests":[{"id":1706081233684,"input":"abc def\nxyz\n\n\n5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Shishir\\Desktop\\lab\\Cryptography\\cipher.cpp","group":"local","local":true}
