@@ -1,0 +1,21 @@
+
+KEY GENERATION:
+
+select p,q where p,q are both primes and p!=q
+calculate n = p*q
+calculate @(n) = (p-1)(q-1)
+select integer e where gcd(@(n),e) = 1 and 1<e<@(n)
+calculate d where d = e^(-1) mod @(n)
+public key PU = {e,n}
+private key PR = {d,n}
+
+ENCRYPTION:
+
+plaintext M<n
+Cipher text C = M^e mod n
+
+
+DECRYPTION:
+
+Cipher text C
+plain text M = C^d  mod n
