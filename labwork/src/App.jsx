@@ -1,33 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const arr = ['No', 'Are you sure?', 'Really? Sure?', 'Think again please!', 'Really really sure??????', 'Last time: NO?']
+
+  const handleClick = () => {
+    if(count == arr.length-1) {
+      setCount(0);
+    } else {
+      setCount(count+1);
+    }
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    {
+      
+    }
+      <div className='conatainer'>
+        <div>
+          <h1>Will you be my valentine?</h1>
+        </div>
+        <div>
+          <button onClick={handleClick}>
+            <h1>{arr[count]}</h1>
+          </button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
