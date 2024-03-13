@@ -27,7 +27,7 @@ int main() {
     }
 
     string Encrypt = "", Decrypt = "";
-    for(auto x:fullParagraph) {
+    for(auto x:fullParagraph) { 
         if(x != ' ' && x != '\n') {
             Encrypt += forEncrypt[x];
         } else {

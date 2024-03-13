@@ -8,7 +8,7 @@ void ParagraphInput(string &fullParagraph) {
         fullParagraph += line;
         fullParagraph += "\n";
     } while (line.size());
-}
+} 
 
 void Decrypting(string &Encrypt, string &Decrypt, int key) {
     for(auto x:Encrypt) {
